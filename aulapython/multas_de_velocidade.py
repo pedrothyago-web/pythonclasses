@@ -24,3 +24,20 @@ elif (speed >= 96) and (speed <= 120): #20% a #50%
 
 else: #acima de 50
     print("You received a fine of R$880,41 and had your driver's license suspended.")
+
+
+    #codigo melhorado
+
+percentual = (speed - max_speed) / max_speed*100
+
+if speed <= max_speed:
+     print("You are within the speed limit.")
+
+elif percentual <= 20:
+    print("You received a fine of R$130,16 and 4 points on your driver's license.")
+
+elif percentual >= 50:
+    print("You received a fine of R$195,23 and 5 points on your driver's license.")
+
+else: #acima de 50
+    print("You received a fine of R$880,41 and had your driver's license suspended.")

@@ -1,0 +1,34 @@
+# ---------------------------------------------------------------------------------------------------------------------------
+
+# Exercício: Escreva um programa que calcule o preço a pagar pelo fornecimento de energia elétrica. Pergunte a quantidade de kWh consumida e o tipo de instalação: R para residências, I para indústrias e C para comércios. Calcule o preço a pagar de acordo com a tabela a seguir.
+
+# ---------------------------------------------------------------------------------------------------------------------------
+
+kwh = float(input("Amount of kWh consumed:: "))
+type = input("Type of installation (R, I or C): ").upper()
+
+price = 0
+
+if type == "R":
+    if kwh <= 500:
+        price = kwh * 0.40
+    else:
+        price = kwh * 0.65
+
+elif type == "C":
+    if kwh <= 1000:
+        price = kwh * 0.55
+    else:
+        price = kwh * 0.60
+
+elif type == "I":
+    if kwh <= 5000:
+        price = kwh * 0.55
+    else:
+        price = kwh * 0.60
+
+else:
+    print("Invalid installation type.")
+
+if price > 0:
+    print(f"Price to pay: R$ {price:.2f}")

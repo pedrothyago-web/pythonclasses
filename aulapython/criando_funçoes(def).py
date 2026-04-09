@@ -10,7 +10,7 @@ c = soma(10, 12)
 
 
 
-# Outro exemplo 
+# Another exercise
 
 def soma(a, b):  # a e b são argumentos, vão ser atribuidos fora da função 
    resultado = a + b 
@@ -39,3 +39,22 @@ def soma(a, b):
 a = soma(10, 20)   #30  escrevi o valor de retorno, terei a = 30
 b = soma(20, 30) +5 #50   escrevi o valor de retorno no lugar da chamada de função, terei b = 55
 c = soma(10, 12) +3 #22    escrevi o valor de retorno no lugar da chamada de função, terei c = 66
+
+
+
+#--------------------------------------------------------------------------------------------------------
+#Anoter exercise - 08/04
+
+def podeVotar(nome, idade):
+    if idade >=16:
+        return nome + " pode votar"  # Se a idade for maior que 16 anos, vai concatenar a variavel nome + 'pode votar', fazendo com que seja imprimido 'Lucas pode voltar'.
+    else:
+        return nome + " nao pode votar"  # Se a idade for menor que 16 anos, vai concatenar a variavel nome + ' nao pode votar', fazendo com que seja imprimido 'Lucas nao pode voltar'.
+    
+        
+a = podeVotar("Lucas",38)
+assert a == "Lucas pode votar"
+b = podeVotar("Maira",13)
+assert b == "Maira nao pode votar"
+c = podeVotar("Pedro",16) + " mas por pouco"
+assert c == "Pedro pode votar, mas por pouco"

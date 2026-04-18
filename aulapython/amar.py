@@ -1,14 +1,14 @@
 ama = input("Você ama?: ").lower()
 
 
-    if ama == "sim":
-        print("Não machuca.")
-        break
+if ama == "sim":
+    print("Não machuca.")
+#breakpoint
 
-    elif ama == "não":
-        print("Machuca")
-        break
+elif ama == "não":
+    print("Machuca")
+#breakpoint
 
-    else:
-        print("Você não ama nem ama.")
-        break
+else:
+    print("Você não ama nem ama.")
+#breakpoint
